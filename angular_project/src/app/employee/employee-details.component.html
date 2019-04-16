@@ -1,0 +1,47 @@
+<div class="panel panel-primary" *ngIf="employee">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{employee.Name}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-xs-10">
+        <div class="row vertical-align">
+          <div class="col-xs-4">
+            <img class="imageClass" [src]="employee.Photopath" />
+          </div>
+          <div class="col-xs-8">
+  
+            <div class="row">
+              <div class="col-xs-6">
+                Salary
+              </div>
+              <div class="col-xs-6">
+                : {{employee.Salary}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                DOB
+              </div>
+              <div class="col-xs-6">
+                : {{employee.DOB}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Is Active
+              </div>
+              <div class="col-xs-6">
+                : {{employee.isActive}}
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <a class="btn btn-primary" [routerLink]="['/list', {id:employee.id}]"
+         queryParamsHandling="preserve">Back to List</a>
+    </div>
+  </div>
+  

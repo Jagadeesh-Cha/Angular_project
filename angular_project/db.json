@@ -1,0 +1,87 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "Name": "Mark",
+      "Salary": "9000",
+      "DOB": "09-09-1989",
+      "skills": [
+        {
+          "skillName": "C#",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "Java",
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Name": "John",
+      "Salary": "19000",
+      "DOB": "09-10-1995",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "HTML",
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "LINQ",
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Name": "brown",
+      "Salary": "19999999",
+      "DOB": "12-12-1990",
+      "skills": [
+        {
+          "skillName": "kung-fu",
+          "proficiency": "advanced"
+        }
+      ],
+      "Photopath": ""
+    },
+    {
+      "id": 4,
+      "Name": "Jaggu1",
+      "Salary": "40000",
+      "DOB": "67-90-1234",
+      "skills": [
+        {
+          "skillName": "horn",
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "murd",
+          "proficiency": "intermediate"
+        }
+      ],
+      "Photopath": "not working"
+    },
+    {
+      "id": 5,
+      "Name": "ponus",
+      "Salary": "56000",
+      "DOB": "12-11-1996",
+      "skills": [
+        {
+          "skillName": "Py",
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "Myr",
+          "proficiency": "intermediate"
+        }
+      ],
+      "Photopath": ""
+    }
+  ]
+}

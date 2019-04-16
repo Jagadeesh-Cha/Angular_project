@@ -1,0 +1,27 @@
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Search By Name" [ngClass]="searchTerm" />
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered" *ngIf="employees && employees.length">
+      <thead>
+        <tr class="bg-primary">
+          <th>id</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>DOB</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.Name }}</td>
+          <td>{{ employee.Salary }}</td>
+          <td>{{ employee.DOB }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
