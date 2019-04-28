@@ -1,0 +1,33 @@
+need to fill the connection details first in the index.js
+
+make sure that it is not the root but soe other new connection
+
+create a new database 'emp-database' in that create a new table 'employee' with id,Name,DOB,salary,photoPath as it's columns
+
+now go to the power shell and run npm install
+
+go to the employee table and create a new stored procedure that is :
+====
+if _id = 0 then
+insert  into employee(Name,DOB,salary,photoPath)
+values (_Name,_DOB,_salary,_photoPath);
+
+SET _id = last_insert_id();
+
+else
+update employee
+set
+Name = _Name,
+DOB = _DOB,
+salary = _salary,
+photPath = _photoPath
+where id = _id;
+end if;
+select _id as 'id';
+end
+
+====
+then go the folder in which chrome.exe is present and run the following command:
+# chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+
+then run "nodemon index.js"
